@@ -6,4 +6,10 @@ $(document).ready(function() {
         slidesNavigation: true,
         scrollingSpeed: 500
     });
+    
+    var section = location.href.substring(location.href.indexOf('#'));
+    if (section != "#portfolio" && section != "#contact") {
+        $('#aboutli').addClass('active');
+    }
+
 });
