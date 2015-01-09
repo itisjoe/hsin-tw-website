@@ -1,0 +1,134 @@
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+.title a, .title a:link, .title a:visited, .title a:hover, .title a:active{
+    color: #fff;
+}
+
+.recently {
+    font-size: 18px;
+}
+
+/* section0
+* --------------------------------------- */
+#section0 div{
+    font-size: 72px;
+    color: #333333;
+}
+
+#section0 div.intro {
+    font-size: 36px;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 10px;
+}
+
+#section0 div.name{
+    color: #fff;
+}
+
+#section0 .englishName {
+    font-size: 36px;
+}
+
+
+/* section1
+* --------------------------------------- */
+#section1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+#section1 h2{
+    font-size: 48px;
+}
+
+#section1 .intro {
+    margin: 0 auto;
+    display: table;
+}
+
+#section1 .box {
+    float: left;
+    margin: 6px;
+}
+#section1 .box .title {
+    font-size: 18px;
+    text-align: center;
+}
+
+#section1 img {
+    width: 100px;
+}
+
+
+/* section2
+* --------------------------------------- */
+#section2 {
+    color: #333333;
+    font-size: 36px;
+}
+
+#section2 strong {
+    color: #000;
+}
+
+#section2 img {
+    width: 100px;
+    margin: 10px 5px;
+}
+
+
+/* Menu
+* --------------------------------------- */
+#menu li {
+    font-size: 24px;
+	display:inline-block;
+	margin: 5px;
+	color: #000;
+
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover, #menu li a:hover{
+	color: #fff;
+}
+#menu li:hover{
+	color: #ccdd33;
+}
+#menu li a,
+#menu li.active a{
+	padding: 10px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:20px;
+	left:30px;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
