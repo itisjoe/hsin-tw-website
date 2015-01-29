@@ -1,15 +1,19 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        sectionsColor: ['#4DC8E5', '#6EC575', '#FAD247'],
-        anchors: ['about', 'portfolio', 'contact'],
-        menu: '#menu',
-        slidesNavigation: true,
-        scrollingSpeed: 500
+    $.get( "tools/ig/joe963.php", function( data ) {
+        $.supersized({
+            fit_portrait: 0,
+            slides : [{image:data}]
+        });
     });
     
-    var section = location.href.substring(location.href.indexOf('#'));
-    if (section != "#portfolio" && section != "#contact") {
-        $('#aboutli').addClass('active');
+    if ($(document).height() > $('#content').height()) {
+        $('#content').css('height',$(document).height());
+    }
+    if ($(document).width() > 999) {
+        $('#content').css('width',$(document).width() * 0.618);
+    } else {
+        $('#content').css('width',$(document).width());
     }
 
 });
+
