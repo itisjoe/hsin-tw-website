@@ -2,7 +2,7 @@
 #content{
     background:rgba(0%,0%,0%,0.6);
     width:720px;
-    height: 1000px;
+    height: 1200px;
     margin:0px auto;
     text-align:left;
     color:#fff;
@@ -44,6 +44,8 @@
 
 .intro .box{
     float: left;
+    text-align: center;
+    font-size: 24px;
     margin:10px 10px 30px 10px;
 }
 
