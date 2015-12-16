@@ -4,6 +4,7 @@ $(document).ready(function() {
             fit_portrait: 0,
             slides : [{image:data}]
         });
+        $('#supersized').hide().fadeIn(6000);
     });
     
     if ($(document).height() > $('#content').height()) {
