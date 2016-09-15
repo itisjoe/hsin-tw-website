@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#avatar {
+  border-radius: 50%;
+  width: 120px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+a {
+  color: white;
+}
+a:link {
+  color: #cccccc;
+}
+a:visited {
+  color: #cccccc;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: #cccccc;
+}
+#main {
+  color: #333333;
+  font-size: 20px;
+  line-height: 150%;
+}
+#main .content {
+  padding: 0% 5% 5% 5%;
+}
+#main .content .project li {
+  display: block;
+}
+#main .content .project h2 {
+  margin: 45px 0 5px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #666666;
+}
+#main .content .project .description {
+  font-size: 16px;
+}
+#main .content .project a,
+#main .content .project a:link,
+#main .content .project a:visited {
+  color: #666666;
+}
+#main .content .project a:hover {
+  color: hotpink;
+}
+#main .content .project a:active {
+  color: #666666;
+}
+@media screen and (min-width: 1023px) {
+  #header {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-size: cover;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: center;
+  }
+  #header .content {
+    margin-top: 20%;
+    text-align: center;
+  }
+  #header .content h1 {
+    line-height: 200%;
+    font-size: 30px;
+    color: #cccccc;
+  }
+  #header .content h1 strong {
+    color: #ffffff;
+    display: block;
+  }
+  #main {
+    margin-left: 35%;
+    min-height: 100%;
+  }
+  #footer {
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    line-height: 200%;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1022px) {
+  #header {
+    height: 500px;
+    background-color: black;
+    background-size: cover;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-align: center;
+  }
+  #header .content {
+    padding-top: 120px;
+    text-align: center;
+  }
+  #header .content h1 {
+    line-height: 200%;
+    font-size: 30px;
+    color: #cccccc;
+  }
+  #header .content h1 strong {
+    color: #ffffff;
+    display: block;
+  }
+  #footer {
+    margin: 20px;
+    line-height: 200%;
+    color: #333333;
+    text-align: center;
+  }
+  #footer a,
+  #footer a:link,
+  #footer a:visited {
+    color: #666666;
+  }
+  #footer a:hover {
+    color: hotpink;
+  }
+  #footer a:active {
+    color: #666666;
+  }
+}

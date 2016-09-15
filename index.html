@@ -1,138 +1,111 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh-tw">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="zh-tw">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>馮信喬 Feng Hsin Chiao</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<meta name="author" content="Feng Hsin Chiao" />
-	<meta name="description" content="It is Feng Hsin Chiao's personal website" />
-	<meta name="keywords"  content="php,jquery,hsin,website,webdesign,fenghsinchiao,html,css" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="js/supersized.3.2.0/supersized.core.css" type="text/css" media="screen" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/supersized.3.2.0/supersized.core.3.2.0.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <meta lang="zh-tw" name="keywords" content="馮信喬,網站開發,手機應用程式">
+    <meta lang="zh-tw" name="description" content="馮信喬個人網站">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-<div id="content">
-	<div class="section " id="section0">
-    	<div class="name">
-        	<img class="img-circle" src="images/avatar.png" width="100">
-            馮 信 喬
-            <span class="englishName">Feng Hsin Chiao</span>
+    <header id="header">
+        <div class="content">
+            <img id="avatar" src="images/avatar.png" alt="馮信喬 Feng Hsin Chiao">
+            <h1>
+                <strong>馮信喬</strong>
+                Feng Hsin Chiao
+            </h1>
         </div>
-        <div class="personalintro">
-            I am a web and mobile program designer.
-            Mainly use PHP for web design and Objective-C for mobile design.
-            Devote to build interesting, simple and useful stuff for people.
+    </header>
+    <div id="main">
+        <div class="content">
+            <div class="project">
+                <h2>Website</h2>
+                <div class="description">
+                	以下示範網站使用 Laravel 5.1 建置，需要試用後台系統或是更多我製作的專案，請來信討論 joe[at]aol.tw 。
+                </div>
+                <ul>
+                    <li><a href="http://demo.hsin.tw/light/public/">形象型網站</a></li>
+                    <li><a href="http://demo.hsin.tw/shop/public/">購物型網站</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>Mobile App</h2>
+                <div class="description">
+                    使用 Cordova 建置 Android App ，使用 Objective-C 及 Swift 建置 iPhone App 。以下各連結可前往應用程式列表。
+                </div>
+                <ul>
+                    <li><a href="https://play.google.com/store/apps/developer?id=Feng+Hsin+Chiao">Google Play Store</a></li>
+                    <li><a href="https://itunes.apple.com/us/developer/hsin.tw/id518916702">App Store</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>電子書 - Swift 起步走</h2>
+                <div class="description">
+                    關於開發 iPhone App 的 Swift 基礎入門電子書，你可以學習從零開始建構出一個完整的 iPhone App。以下為可以取得的地方。
+                </div>
+                <ul>
+                    <li><a href="http://bit.ly/29niTXU">Readmoo</a></li>
+                    <li><a href="http://bit.ly/293Yl70">Pubu</a></li>
+                    <li><a href="http://bit.ly/29aXCoe">Leanpub</a></li>
+                    <li><a href="http://bit.ly/29njOYt">GitBook</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>Line 原創貼圖 - 阿啾的日常</h2>
+                <div class="description">
+                    原創角色：阿啾，2016 年登場。
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/itisjiiu/">FB 專頁： 阿啾 jiiu</a></li>
+                    <li><a href="https://line.me/S/sticker/1321014">電腦上購買貼圖</a></li>
+                    <li><a href="https://line.me/R/shop/detail/1321014">手機上購買貼圖</a></li>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>專案</h2>
+                <div class="description">
+                    其他在工作之餘建立的小專案。
+                </div>
+                <ul>
+                    <li>Firefox Add-on : <a href="https://addons.mozilla.org/zh-TW/firefox/addon/cmdenterformac/">cmdEnter</a></li>
+                    <li>PHP Instagram API Class : <a href="https://github.com/itisjoe/gogoig">gogoig</a></li>
+                    <li><a href="http://itisjoe.github.io/TaiwanProducts/">收集臺灣製造的店家</a>(based on <a href="https://www.ptt.cc/bbs/TWproducts/index.html">ptt</a>)</li>
+                    <li><a href="http://itisjoe.github.io/slotsWebsite/">線上抽獎機</a> <a href="https://github.com/itisjoe/slotsWebsite"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                    <li>jQeury picTags <a href="http://hsin.tw/tools/picTags/">Basic</a> <a href="http://hsin.tw/tools/picTags/edit.html">Edit</a> <a href="https://github.com/itisjoe/picTags"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
-	<div class="section" id="section1">
-
-	    <div class="slide">
-    	    <h2>Website <span class="recently"> ( recent ) </span></h2>
-			<div class="intro">
-    			<div class="box">
-        			<a href="http://www.marquess-homa.com.tw/brandweb/"><img src="images/portfolio/brand.png" class="img-rounded"></a>
-        			<div class="title"><a href="http://www.marquess-homa.com.tw/brandweb/">侯門行</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="http://www.linajet.com.tw/"><img src="images/portfolio/linajet.png" class="img-rounded"></a>
-        			<div class="title"><a href="http://www.linajet.com.tw/">利娜潔</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="http://www.sungful.com/"><img src="images/portfolio/sungful.png" class="img-rounded"></a>
-        			<div class="title"><a href="http://www.sungful.com/">嵩馥</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="http://www.9bau.com/"><img src="images/portfolio/9bau.png" class="img-rounded"></a>
-        			<div class="title"><a href="http://www.9bau.com/">酒堡</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="http://www.mec-pro.com.tw/"><img src="images/portfolio/mecpro.png" class="img-rounded"></a>
-        			<div class="title"><a href="http://www.mec-pro.com.tw/">誠諾理</a></div>
-    			</div>
-			</div>
-		</div>
-	    <div class="slide">
-    	    <h2>Mobile App</h2>
-			<div class="intro">
-    			<div class="box">
-        			<a href="https://itunes.apple.com/app/id1067557476"><img src="images/portfolio/speeddial.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/app/id1067557476">速撥</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/simple-acc-extra-light-personal/id946614690"><img src="images/portfolio/simpleacc.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/simple-acc-extra-light-personal/id946614690">Simple Acc</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/d3-heroes-for-diablo-3/id893065524"><img src="images/portfolio/d3heroes.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/d3-heroes-for-diablo-3/id893065524">D3 Heroes</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/direct-dial/id672588774"><img src="images/portfolio/directdial.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/direct-dial/id672588774">Direct Dial</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/paper-note-r/id672594196"><img src="images/portfolio/papernoter.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/paper-note-r/id672594196">Paper Note R</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/chou-chou-qian/id598910814"><img src="images/portfolio/luckyday.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/chou-chou-qian/id598910814">抽抽籤</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/dodgedodge/id529461399"><img src="images/portfolio/dodgedodge.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/dodgedodge/id529461399">dodgeDodge</a></div>
-    			</div>
-    			<div class="box">
-        			<a href="https://itunes.apple.com/us/app/papernote/id518916699"><img src="images/portfolio/papernote.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://itunes.apple.com/us/app/papernote/id518916699">paperNote</a></div>
-    			</div>
-			</div>
-		</div>
-	    <div class="slide">
-    	    <h2>Firefox Add-on</h2>
-			<div class="intro">
-    			<div class="box">
-        			<a href="https://addons.mozilla.org/firefox/addon/cmdenterformac/"><img src="images/portfolio/cmdenter.png" class="img-rounded"></a>
-        			<div class="title"><a href="https://addons.mozilla.org/firefox/addon/cmdenterformac/">cmdEnter</a></div>
-    			</div>
-			</div>
-		</div>
-	    <div class="slide">
-    	    <h2>PHP Lib</h2>
-			<div class="intro">
-    			<div class="box">
-        			<a href="https://github.com/itisjoe/gogoig">gogoig</a>
-        			<div class="title"><a href="https://github.com/itisjoe/gogoig">Instagram API Class</a></div>
-    			</div>
-			</div>
-		</div>
-
-	</div>
-	<div class="section" id="section2">
-    	<div class="contactintro">
-        Contact me via <strong>joe [at] aol.tw </strong> <br>or you can find me at these places below:
+    <footer id="footer">
+        <div class="content">
+            <ul id="icon">
+                <li><a href="http://blog.hsin.tw"><i class="fa fa-wordpress fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://instagram.com/joe963"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/itisjoe"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="http://tw.linkedin.com/in/hsintw"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul id="copyright">
+                <li>&copy; hsin.tw</li>
+                <li>Images by <a href="https://unsplash.com">Unsplash</a></li>
+            </ul>
         </div>
-		<div class="contactbox">
-    		<a href="http://blog.hsin.tw"><img src="images/wordpress.png" class="img-rounded"></a>
-    		<a href="http://instagram.com/joe963"><img src="images/instagram.png" class="img-rounded"></a>
-    		<a href="https://github.com/itisjoe"><img src="images/github.png" class="img-rounded"></a>
-    		<a href="http://tw.linkedin.com/in/hsintw"><img src="images/linkedin.png" class="img-rounded"></a>
-		</div>
-	</div>
-</div>
-
+    </footer>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-33613475-1', 'auto');
-  ga('send', 'pageview');
+$(function(){
+    $('#header').css('background-image','url(images/bg/bg'+ Math.floor(Math.random()*6 + 1) +'.jpg)');
+});
 </script>
 </body>
 </html>
