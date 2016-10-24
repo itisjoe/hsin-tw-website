@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+body {
+  font-family: "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+}
 #avatar {
   border-radius: 50%;
   width: 120px;
@@ -94,7 +97,7 @@ a:active {
   }
   #footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     width: 35%;
     line-height: 200%;
     color: #ffffff;
